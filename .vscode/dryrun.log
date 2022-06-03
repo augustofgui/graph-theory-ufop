@@ -1,0 +1,5 @@
+make.exe --dry-run --keep-going --print-directory
+make: Entering directory 'c:/Users/jeron/Documents/Code/graph-theory-ufop'
+make: Nothing to be done for 'DFS/programa.exe'.
+make: Leaving directory 'c:/Users/jeron/Documents/Code/graph-theory-ufop'
+ 
