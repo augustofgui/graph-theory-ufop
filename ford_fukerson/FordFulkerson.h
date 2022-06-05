@@ -4,30 +4,50 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
+#include <limits.h>
 
-typedef struct node {
+typedef struct node
+{
     int vertex;
-    struct node* next;
+    int flowCap;
+    bool isRes;
+    struct node *next;
 } Node;
 
-typedef struct graph {
+typedef struct graph
+{
     int numVertices;
-    bool isDir;
-    Node** adjLists;
+    bool *marked;
+    Node **adjLists;
+    Node *anwserList;
+    Node **tailNodes;
 } Graph;
 
-Node* createNode(int vId);
+void bubbleSort(Node *start);
 
-Graph *createGraph(int numVertices, int isDir);
+Node * copyNode(Node * cpy);
 
-void addEdge(Graph *graph, int s, int d, int peso);
+void swap(Node *a, Node *b);
+
+Node *createNode(int vId, int flowCap, bool isRes);
+
+Graph *createGraph(int numVertices);
+
+Graph *createCopyGraph(Graph * sourceGraph);
+
+void addEdge(Graph *graph, int s, int d, int mf, bool isRes);
+
+void addAnwser(Graph *graph, int s, int mf, bool isRes);
+
+void clearAnwser(Graph *graph);
 
 void printGraph(Graph *graph);
 
-void doDFS(Graph *graph, int vertex);
+void printAnwser(Graph *graph);
 
-void dfs(Graph *graph, int vertex, bool * marked);
+int fordFulkerson(Graph *graph, int source, int sink);
 
-void visit(int vId, bool * marked);
+int dfs(Graph *graph, int vertex, int sink, int flow);
 
 #endif // FORD_FULKERSON_H

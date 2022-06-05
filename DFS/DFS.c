@@ -14,6 +14,8 @@ Graph *createGraph(int numVertices, int isDir)
     newGraph->numVertices = numVertices;
     newGraph->isDir = (isDir == 0) ? false : true;
 
+    newGraph->marked = calloc(numVertices, sizeof(bool));
+
     newGraph->adjLists = malloc(numVertices * sizeof(Node *));
 
     int i;
@@ -80,34 +82,24 @@ void printGraph(Graph *graph)
     printf("\n");
 }
 
-void doDFS(Graph *graph, int vertex)
-{
-    bool *marked = calloc(graph->numVertices, sizeof(bool));
-
-    dfs(graph, vertex - 1, marked);
-}
-
-void dfs(Graph *graph, int vertex, bool *marked)
+void dfs(Graph *graph, int vertex)
 {
     int v;
-    if (marked[vertex] == true)
+    if (graph->marked[vertex] == true)
         return;
 
     Node *temp = graph->adjLists[vertex];
-    visit(vertex, marked);
+    
+    printf("%d\n", vertex + 1);
+    
+    graph->marked[vertex] = true;
 
     while (temp != NULL)
     {
         // printf("%d:%d:%s\n", v+1, temp->vertex+1, marked[temp->vertex] ? "true" : "false");
-        if (marked[temp->vertex] != true)
-            dfs(graph, temp->vertex, marked);
+        if (graph->marked[temp->vertex] != true)
+            dfs(graph, temp->vertex);
 
         temp = temp->next;
     }
-}
-
-void visit(int vId, bool *marked)
-{
-    printf("%d\n", vId + 1);
-    marked[vId] = true;
 }

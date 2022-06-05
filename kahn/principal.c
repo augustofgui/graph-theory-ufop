@@ -1,4 +1,4 @@
-#include "FordFulkerson.h"
+#include "kahn.h"
 
 int main()
 {      
@@ -13,11 +13,13 @@ int main()
     Graph* graph = createGraph(numVert);
 
     for( i=0; i < numArcs; i++) {
-        scanf("%d %d %d", &s, &d, &mf);
-        addEdge(graph, s-1, d-1, mf, false);
+        scanf("%d %d", &s, &d);
+        addEdge(graph, s-1, d-1);
     }
-    
-    fordFulkerson(graph, 0, numVert-1);
+
+    printGraph(graph);
+
+    kahnSort(graph);
     
     return 0;
 }

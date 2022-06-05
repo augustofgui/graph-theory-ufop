@@ -13,6 +13,7 @@ typedef struct node {
 typedef struct graph {
     int numVertices;
     bool isDir;
+    bool * marked;
     Node** adjLists;
 } Graph;
 
@@ -24,10 +25,6 @@ void addEdge(Graph *graph, int s, int d, int peso);
 
 void printGraph(Graph *graph);
 
-void doDFS(Graph *graph, int vertex);
-
-void dfs(Graph *graph, int vertex, bool * marked);
-
-void visit(int vId, bool * marked);
+void dfs(Graph *graph, int vertex);
 
 #endif // DFS_H

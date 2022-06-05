@@ -18,9 +18,9 @@ int main()
         addEdge(graph, s-1, d-1, w);
     }
 
-    //printGraph(graph);
+    printGraph(graph);
     
-    doDFS(graph, initialVert);
+    dfs(graph, --initialVert);
     
     return 0;
 }

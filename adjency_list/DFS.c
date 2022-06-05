@@ -59,4 +59,22 @@ void printGraph(Graph *graph)
 
 void dfs(Graph *graph, int vertex)
 {
+    int v;
+    if (graph->marked[vertex] == true)
+        return;
+
+    Node *temp = graph->adjLists[vertex];
+    
+    printf("%d\n", vertex + 1);
+    
+    graph->marked[vertex] = true;
+
+    while (temp != NULL)
+    {
+        // printf("%d:%d:%s\n", v+1, temp->vertex+1, marked[temp->vertex] ? "true" : "false");
+        if (graph->marked[temp->vertex] != true)
+            dfs(graph, temp->vertex);
+
+        temp = temp->next;
+    }
 }
