@@ -5,9 +5,8 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Fri Jun 03 17:10:41 2022
+# Make data base, printed on Sat Jun 04 22:33:27 2022
 
 # Variables
 
@@ -22,7 +21,7 @@ USERPROFILE = C:\Users\jeron
 # environment
 LOCALAPPDATA = C:\Users\jeron\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-17715547-70cb-4b16-bc8d-35a98dfeda32-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-2be15b2b-91c2-47da-80ce-b43b5fc5756b-sock
 # environment
 VSCODE_CWD = C:\Users\jeron\Documents\Code\graph-theory-ufop
 # environment
@@ -40,7 +39,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7884_SEJHJFJHOVAZMTPM
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_364_AQOYBHZSWZATBRVN
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -76,7 +75,7 @@ CURDIR := c:/Users/jeron/Documents/Code/graph-theory-ufop
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -96,7 +95,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 7884
+VSCODE_PID = 364
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # makefile (from 'Makefile', line 3)
@@ -228,13 +227,12 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
 
 # No pattern-specific variable values.
 
- 
 # Directories
 
-# . (key c:/Users/jeron/Documents/Code/graph-theory-ufop, mtime 1654278590): 10 files, no impossibilities.
-# DFS (key c:/Users/jeron/Documents/Code/graph-theory-ufop/DFS, mtime 1654277427): 14 files, no impossibilities.
+# . (key c:/Users/jeron/Documents/Code/graph-theory-ufop, mtime 1654375355): 11 files, no impossibilities.
+# DFS (key c:/Users/jeron/Documents/Code/graph-theory-ufop/DFS, mtime 1654287669): 14 files, no impossibilities.
 
-# 24 files, no impossibilities in 2 directories.
+# 25 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -314,7 +312,7 @@ DFS/DFS.o:
 
 dfs: clean DFS/programa.exe
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-03 14:30:27
+#  Last modified 2022-06-03 17:21:09
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
@@ -341,12 +339,12 @@ dfs: clean DFS/programa.exe
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 32 / storage = 298 B / avg = 9 B
-# current buf: size = 8174 B / used = 298 B / count = 32 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 33 / storage = 303 B / avg = 9 B
+# current buf: size = 8174 B / used = 303 B / count = 33 / avg = 9 B
 
-# strcache performance: lookups = 51 / hit rate = 37%
+# strcache performance: lookups = 52 / hit rate = 36%
 # hash-table stats:
-# Load=32/8192=0%, Rehash=0, Collisions=0/51=0%
-# Finished Make data base on Fri Jun 03 17:10:41 2022
+# Load=33/8192=0%, Rehash=0, Collisions=0/52=0%
+# Finished Make data base on Sat Jun 04 22:33:27 2022
 
  
