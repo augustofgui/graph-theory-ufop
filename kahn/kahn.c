@@ -151,10 +151,13 @@ void printGraph(Graph *graph)
 
 void kahnSort(Graph *graph)
 {
+    int i;
     int n = graph->numVertices;
     int *inDegree = calloc(n, sizeof(int));
 
-    int i;
+    for (i = 0; i < n; i++)
+        inDegree[i] = 0;
+
     for (i = 0; i < n; i++)
     {   
         Node *temp = graph->adjLists[i];
@@ -181,26 +184,17 @@ void kahnSort(Graph *graph)
 
         addEdgeArray(&order, u);
         
-        for (i = 0; i < n; i++)
-        {
-            Node *temp = graph->adjLists[i];
+        Node *temp = graph->adjLists[u];
 
-            while (temp != NULL)
-            {   
-                if (inDegree[temp->value] >= 0) {
+        while (temp != NULL)
+        {   
+            inDegree[temp->value] = inDegree[temp->value]-1;
+            if (inDegree[temp->value] == 0)
+                enqueue(queue, temp->value);
 
-                    inDegree[temp->value] = inDegree[temp->value]-1;
-                    if (inDegree[temp->value] == 0)
-                        enqueue(queue, temp->value);
-                }
-
-                temp = temp->next;
-            }
+            temp = temp->next;
         }
 
-        for (i = 0; i < n; i++)
-            printf("[%d]:%d - ", i, inDegree[i]);
-        printf("\n");
         cnt++;
     }
 
@@ -210,7 +204,7 @@ void kahnSort(Graph *graph)
         return;
     }
 
-    printf("L={");
+    printf("L = {");
 
     Node *temp = order;
     while (temp->next != NULL)

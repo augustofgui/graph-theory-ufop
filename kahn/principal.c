@@ -17,8 +17,6 @@ int main()
         addEdge(graph, s-1, d-1);
     }
 
-    printGraph(graph);
-
     kahnSort(graph);
     
     return 0;

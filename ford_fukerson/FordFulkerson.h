@@ -26,7 +26,7 @@ typedef struct graph
 
 void bubbleSort(Node *start);
 
-Node * copyNode(Node * cpy);
+Node *copyNode(Node *cpy);
 
 void swap(Node *a, Node *b);
 
@@ -34,7 +34,7 @@ Node *createNode(int vId, int flowCap, bool isRes);
 
 Graph *createGraph(int numVertices);
 
-Graph *createCopyGraph(Graph * sourceGraph);
+Graph *createCopyGraph(Graph *sourceGraph);
 
 void addEdge(Graph *graph, int s, int d, int mf, bool isRes);
 

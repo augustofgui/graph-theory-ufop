@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sat Jun 04 18:49:09 2022
+# Make data base, printed on Sun Jun 05 21:29:30 2022
 
 # Variables
 
@@ -22,7 +22,7 @@ USERPROFILE = C:\Users\jeron
 # environment
 LOCALAPPDATA = C:\Users\jeron\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-791a4e1f-064f-41e6-bbb0-402f3b894353-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d3f314c8-f326-4a75-aa38-dd106f9da35f-sock
 # environment
 VSCODE_CWD = C:\Users\jeron\Documents\Code\graph-theory-ufop\kahn
 # environment
@@ -38,7 +38,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12624_XOKNUZDOQUWPHLNK
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2612_GTGADMAGXXJPLHIM
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -94,7 +94,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 12624
+VSCODE_PID = 2612
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -103,7 +103,8 @@ VSCODE_PID = 12624
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{},"_languagePackSupport":true}
-# environment
+# e 
+nvironment
 ONEDRIVECONSUMER = C:\Users\jeron\OneDrive
 # default
 MAKE_HOST := Windows32
@@ -154,8 +155,7 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # automatic
 +F = $(notdir $+)
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = und 
-efined
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
 USERDOMAIN = DESKTOP-HI881RS
 # 'override' directive
@@ -201,7 +201,8 @@ ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURE 
+S := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 PROCESSOR_REVISION = 5e03
 # environment
@@ -215,9 +216,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/jeron/Documents/Code/graph-theory-ufop/kahn, mtime 1654375512): 10 files, no impossibilities.
+# . (key c:/Users/jeron/Documents/Code/graph-theory-ufop/kahn, mtime 1654392719): 25 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 25 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -289,12 +290,12 @@ run:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 14 / storage = 107 B / avg = 7 B
-# current buf: size = 8174 B / used = 107 B / count = 14 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 207 B / avg = 7 B
+# current buf: size = 8174 B / used = 207 B / count = 29 / avg = 7 B
 
-# strcache performance: lookups = 22 / hit rate = 36%
+# strcache performance: lookups = 37 / hit rate = 21%
 # hash-table stats:
-# Load=14/8192=0%, Rehash=0, Collisions=0/22=0%
-# Finished Make data base on Sat Jun 04 18:49:09 2022
+# Load=29/8192=0%, Rehash=0, Collisions=0/37=0%
+# Finished Make data base on Sun Jun 05 21:29:30 2022
 
  

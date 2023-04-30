@@ -3,6 +3,5 @@ make: Entering directory 'c:/Users/jeron/Documents/Code/graph-theory-ufop/kahn'
 gcc kahn.c -c
 gcc principal.c -c
 gcc kahn.o principal.o -o programa
- 
 make: Leaving directory 'c:/Users/jeron/Documents/Code/graph-theory-ufop/kahn'
  
